@@ -1,5 +1,7 @@
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height:100%;
 }.main{
     height: 100%;
     width: 100%;
@@ -207,18 +209,18 @@ button {
   
   .content h2 {
     color: #fff;
-    font-size: 8em;
+    font-size: 7em;
     position: absolute;
     transform: translate(-50%, -50%);
   }
-  
+ 
   .content h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #03a9f4;
+    -webkit-text-stroke: 3px #f40388;
   }
   
   .content h2:nth-child(2) {
-    color: #03a9f4;
+    color: #d803f4;
     animation: animate 4s ease-in-out infinite;
   }
   
@@ -260,6 +262,19 @@ button {
     justify-content: center;
     align-items: center;
     height: 200px;
-    margin-left:250px;
+    margin: 0 auto;
+    padding-left: 500px;
     padding-top: 150px;
   }
+
+  @media (max-width : 768px){
+    .content h2 {
+        color: #fff;
+        font-size: 5em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+  }
+.nav{
+    padding-left: 350px;
+}
+}
